@@ -34,3 +34,26 @@ nav li{
     font-weight: 700;
     font-size: 1.125em;  
 }
+
+#menu_icon{
+    display: none;
+}
+
+
+
+
+/* Responsive for Mobile */
+@media screen and (max-width:600px) {
+    nav li{
+        display: none;
+    }
+    #menu_icon{
+        display: block;
+    }
+    nav div h3{
+        font-weight: 500;
+        font-size: 2em;
+        margin: 0;
+        margin-left: 0.3em;
+    }
+}
