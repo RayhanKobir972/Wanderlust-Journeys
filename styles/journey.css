@@ -161,10 +161,131 @@ nav a{
     
 }
 
+/* Why Choose Us Section */
+#choose_heading{
+    font-size: 3em;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+}
+#choose_desc{
+    font-size: 1em;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.choose_us_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+}
+
+.service:nth-child(3) {
+    grid-column: span 2; /* Make it span across both columns */
+    justify-self: center; /* Center horizontally within the grid */
+  }
+.service{
+    height: 14em;
+    width: 35.81em;
+    padding: 2em;
+    border-radius: 1em;
+}
+#service_1{
+    background-color: rgba(251, 181, 99, 0.05);
+}
+#service_2{
+    background-color: rgba(41, 206, 246, 0.05);
+}
+#service_3{
+    background-color: rgba(233, 68, 68, 0.05);
+}
+
+.service_heading{
+    font-size: 1.4em;
+    font-weight: 800;
+}
+
+/* Deals and Discounts Section */
+
+/* .clock{
+    color:#FF5400;
+} */
+#deals_heading{
+    font-size: 3em;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+}
+#deals_desc{
+    display: flex;
+    justify-content: center;
+}
+#image_1{
+    display: flex;
+    gap: 0.5em;
+}
+#image_2{
+    display: flex;
+    gap: 0.5em;
+}
+#image_3{
+    display: flex;
+    gap: 0.5em;
+}
+#icon_container{
+    display: flex;
+    gap: 1.5em;
+}
+#deals_discounts_1{
+    position: relative;
+}
+#deals_container_1{
+    width: 34em;
+    border: 2px solid white;
+    border-radius: 1em;
+    padding: 4em;
+    background-color: rgba(255,255,255,0.80);
+    position: absolute;
+    right: 5em;
+    top: 7em;
+}
+#deals_discounts_2{
+    position: relative;
+}
+#deals_container_2{
+    width: 34em;
+    border: 2px solid white;
+    border-radius: 1em;
+    padding: 4em;
+    background-color: rgba(255,255,255,0.80);
+    position: absolute;
+    left: 5em;
+    top: 7em;
+}
+.image{
+    width: 93.93em;
+}
+
+#price{
+    color: #FF5400;
+}
+#button_book{
+    color: white;
+    padding: 0.9em 1.7em;
+    font-size: 1.2em;
+    font-weight: 800;
+    border-radius: 1em;
+    border: transparent;
+}
+
 
 /* Responsive for Mobile */
 @media screen and (max-width:600px) {
 
+   
     /* Nav Section */
 
     nav li{
@@ -227,4 +348,60 @@ nav a{
     #destination_desc{
         font-size: 1em;
     }
+
+    /* Choose us section */
+    .choose_us_container{
+        display: block;
+    }
+    .service{
+        margin-top: 1em;
+    }
+    /* Deals and Discounts Section */
+    #deals_heading{
+        font-size: 2em;
+    }
+ 
+    #deals_discounts_1{
+        position: relative;
+    }
+    #deals_container_1{
+        width: 24em;
+        border: 2px solid white;
+        border-radius: 1em;
+        padding: 1em;
+        background-color: rgba(255,255,255,0.80);
+        position: absolute;
+        right: 0.1em;
+        top: 14em;
+    }
+    #deals_discounts_2{
+        position: relative;
+    }
+    #deals_container_2{
+        width: 24em;
+        border: 2px solid white;
+        border-radius: 1em;
+        padding: 1em;
+        background-color: rgba(255,255,255,0.80);
+        position: absolute;
+        right: 0.1em;
+        top: 14em;
+    }
+    .image{
+        width: 35em;
+        height: 40em;
+    }
+    
+    #price{
+        color: #FF5400;
+    }
+    #button_book{
+        color: white;
+        padding: 0.9em 1.7em;
+        font-size: 1.2em;
+        font-weight: 800;
+        border-radius: 1em;
+        border: transparent;
+    }
+    
 }
