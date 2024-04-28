@@ -3,7 +3,6 @@
 .bg_color{
     background-color: #FF5400;
 }
-
 /* Nav Section */
 *{
     font-family: "Mulish", sans-serif;
@@ -271,6 +270,8 @@ nav a{
 
 #price{
     color: #FF5400;
+    font: 800;
+    font-size: 1.5em;
 }
 #button_book{
     color: white;
@@ -279,6 +280,120 @@ nav a{
     font-weight: 800;
     border-radius: 1em;
     border: transparent;
+}
+
+#packages_btn{
+    padding: 1em;
+    border-radius: 1em;
+    color: white;
+    margin-left: 25em;
+    border: transparent;
+    font-weight: 800;
+    font-size: 1.5em;
+}
+
+/* Perfect Place Section */
+
+#perfect_place{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#perfect_place_heading{
+    font-size: 2em;
+    font-weight: 800;
+}
+#list_items{
+    font-weight: 700;
+}
+#see_more_button{
+    padding: 1em 1em;
+    border: transparent;
+    border-radius: 1em;
+    font-weight: 800;
+    font-size: 1em;
+    color: white;
+}
+
+/* Newsletter Section */
+#Newsletter_container{
+    display: flex;
+    justify-content: space-between;
+}
+#input_section{
+    border: 1px solid #FF5400;
+    padding: 2em;
+    border-radius: 1em;
+}
+#newsletter_head{
+    font-size: 1.5em;
+    font-weight: 800;
+}
+
+.input{
+    padding: 1em;
+    width: 28em;
+    margin-bottom: 1em;
+    background-color: rgba(19, 19, 24, 0.05);
+    border: transparent;
+    border-radius: 0.5em;
+}
+
+#subscribe_btn{
+    font-size: 1.5em;
+    font-weight: 800;
+    color: white;
+    padding: 0.5em 2em;
+    border: transparent;
+    border-radius: 0.5em;
+    width: 17em;
+}
+
+#newsletter_image{
+    position: relative;
+}
+
+#discount_card{
+    background-color: #FF5400;
+    color: white;
+    padding: 0.5em 1em;
+    width: 14em;
+    border-radius: 1em;
+    position: absolute;
+    transform: translate(-5%, -30%) rotate(-19deg);
+    right: 0;
+    bottom: 0;
+}
+
+#discount{
+    font-size: 1.4em;
+    font-weight: 800;
+}
+
+/* Footer */
+footer{
+    margin-top: 3em;
+    padding-left: 25em;
+    padding-top: 5em;
+    padding-bottom: 4em;
+    background-color: rgba(19, 19, 24, 0.05);
+}
+#footer_container{
+    width: 45em;
+}
+#logo{
+    display: flex;
+    justify-content: center;
+}
+.desc{
+    display: flex;
+    justify-content: center;
+}
+
+#footer_image_container{
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -371,11 +486,8 @@ nav a{
         padding: 1em;
         background-color: rgba(255,255,255,0.80);
         position: absolute;
-        right: 0.1em;
+        right: 2.5em;
         top: 14em;
-    }
-    #deals_discounts_2{
-        position: relative;
     }
     #deals_container_2{
         width: 24em;
@@ -391,17 +503,35 @@ nav a{
         width: 35em;
         height: 40em;
     }
-    
-    #price{
-        color: #FF5400;
+    #packages_btn{
+        margin-left: 13em;
+        font-size: 1em;
     }
-    #button_book{
-        color: white;
-        padding: 0.9em 1.7em;
-        font-size: 1.2em;
-        font-weight: 800;
-        border-radius: 1em;
-        border: transparent;
+    /* Perfect Place Section */
+
+    #perfect_place{
+        display: block;
+
+    }
+    #see_more_button{
+        margin-bottom: 1.5em;
+    }
+    /* Newsletter Section */
+    #Newsletter_container{
+        display: block;
+        margin-top: 0.5em;
+    }
+    #discount_card{ 
+        transform: translate(63%, -30%) rotate(-19deg);
+    }
+    footer{
+        margin-top: 1em;
+        padding-left: 2em;
+        padding-top: 1em;
+        padding-bottom: 2em;
+    }
+    #footer_container{
+        width: 30em;
     }
     
 }
